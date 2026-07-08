@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package common;
 
-option go_package = "github.com/your/proto/common";
-
 // 通用空消息
 message Empty {}
 
