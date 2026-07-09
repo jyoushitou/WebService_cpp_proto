@@ -7,19 +7,24 @@ message Empty {}
 
 // 通用分页请求
 message PageRequest {
-    int32 page = 1;
-    int32 page_size = 2;
+  int32 page      = 1;
+  int32 page_size = 2;
 }
 
 // 通用分页响应
 message PageResponse {
-    int32 page = 1;
-    int32 page_size = 2;
-    int32 total = 3;
+  int32 page      = 1;
+  int32 page_size = 2;
+  int32 total     = 3;
 }
 
 // 通用状态响应
 message StatusResponse {
-    int32 code = 1;
-    string message = 2;
+  int32  code    = 1;
+  string message = 2;
+}
+
+message user{
+  int32  id   = 1;
+  string name = 2;
 }
