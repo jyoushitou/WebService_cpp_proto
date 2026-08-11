@@ -1,0 +1,10 @@
+^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\8C9670CBE4A8C088214EF304A3AC2BDE\GENERATE.STAMP.RULE
+setlocal
+E:\app\Cmake\bin\cmake.exe -SD:/WebServer/proto/source -BD:/WebServer/proto/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/WebServer/proto/build/rpc_protos.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\WebServer\proto\build\generated\common\Common.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WebServer\proto\build\generated\mysql\select.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WebServer\proto\build\generated\user\User.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\WebServer\proto\build\generated\common\Common.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WebServer\proto\build\generated\mysql\MySQL.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WebServer\proto\build\generated\mysql\select.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WebServer\proto\build\generated\user\User.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\9dbc6b16bea737698ee75e9e893bd41f\Common.pb.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\44d64101f07635677f02abbc8f03aa92\MySQL.pb.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\44d64101f07635677f02abbc8f03aa92\select.pb.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\8d5fef5b894cbd5cf51b00f8cbdab2eb\User.pb.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\WebServer\proto\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8E628A26-D05A-3C4C-9645-1EE6C958E709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{37F252CF-E6D9-33AF-B35E-3A18E9B7B0A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{76222ECE-B636-3D1A-8C37-CEFC40BCDC06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

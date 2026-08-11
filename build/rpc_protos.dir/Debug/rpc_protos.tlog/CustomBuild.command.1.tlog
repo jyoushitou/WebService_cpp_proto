@@ -1,0 +1,50 @@
+^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\9DBC6B16BEA737698EE75E9E893BD41F\COMMON.PB.H.RULE
+setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/common/Common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\44D64101F07635677F02ABBC8F03AA92\MYSQL.PB.H.RULE
+setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/MySQL.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\44D64101F07635677F02ABBC8F03AA92\SELECT.PB.H.RULE
+setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/select.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\8D5FEF5B894CBD5CF51B00F8CBDAB2EB\USER.PB.H.RULE
+setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/user/User.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WEBSERVER\PROTO\SOURCE\CMAKELISTS.TXT
+setlocal
+E:\app\Cmake\bin\cmake.exe -SD:/WebServer/proto/source -BD:/WebServer/proto/build --check-stamp-file D:/WebServer/proto/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

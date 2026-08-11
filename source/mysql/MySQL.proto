@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package MySQL;
+
+import "common/Common.proto";
+
+message MySQL {
+  common.header head=1;
+}

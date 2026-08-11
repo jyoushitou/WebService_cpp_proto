@@ -5,26 +5,20 @@ package common;
 // 通用空消息
 message Empty {}
 
-// 通用分页请求
-message PageRequest {
-  int32 page      = 1;
-  int32 page_size = 2;
+message header
+{
+  uint32 MSGID  = 1;//消息ID
+  uint64 MSGLen = 2;//消息长度
 }
 
-// 通用分页响应
-message PageResponse {
-  int32 page      = 1;
-  int32 page_size = 2;
-  int32 total     = 3;
+message error
+{
+  header head      = 3;//消息头部节点
+  uint32 ServiceID = 4;//错误服务器ID
 }
 
-// 通用状态响应
-message StatusResponse {
-  int32  code    = 1;
-  string message = 2;
-}
-
-message user{
-  int32  id   = 1;
-  string name = 2;
+message goal
+{
+  header head          = 3;//消息头部节点
+  uint32 ServiceGoalID = 4; //微服务目标ID
 }

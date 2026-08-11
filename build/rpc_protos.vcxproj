@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81A1938C-9AA1-360B-ADA4-E9C02262EFB2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>rpc_protos</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rpc_protos.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rpc_protos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rpc_protos.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rpc_protos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rpc_protos.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rpc_protos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rpc_protos.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rpc_protos</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;ABSL_CONSUME_DLL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WebServer\proto\build\generated;D:\WebServer\proto\source;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\9dbc6b16bea737698ee75e9e893bd41f\Common.pb.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C++ code for D:/WebServer/proto/source/common/Common.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/common/Common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\source\common\Common.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\build\generated\common\Common.pb.h;D:\WebServer\proto\build\generated\common\Common.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C++ code for D:/WebServer/proto/source/common/Common.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/common/Common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\source\common\Common.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\build\generated\common\Common.pb.h;D:\WebServer\proto\build\generated\common\Common.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C++ code for D:/WebServer/proto/source/common/Common.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/common/Common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\source\common\Common.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\build\generated\common\Common.pb.h;D:\WebServer\proto\build\generated\common\Common.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C++ code for D:/WebServer/proto/source/common/Common.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/common/Common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\source\common\Common.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\build\generated\common\Common.pb.h;D:\WebServer\proto\build\generated\common\Common.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\44d64101f07635677f02abbc8f03aa92\MySQL.pb.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/MySQL.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/MySQL.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\source\mysql\MySQL.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\build\generated\mysql\MySQL.pb.h;D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/MySQL.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/MySQL.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\source\mysql\MySQL.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\build\generated\mysql\MySQL.pb.h;D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/MySQL.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/MySQL.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\source\mysql\MySQL.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\build\generated\mysql\MySQL.pb.h;D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/MySQL.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/MySQL.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\source\mysql\MySQL.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\build\generated\mysql\MySQL.pb.h;D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\44d64101f07635677f02abbc8f03aa92\select.pb.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/select.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/select.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\source\mysql\select.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\build\generated\mysql\select.pb.h;D:\WebServer\proto\build\generated\mysql\select.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/select.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/select.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\source\mysql\select.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\build\generated\mysql\select.pb.h;D:\WebServer\proto\build\generated\mysql\select.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/select.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/select.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\source\mysql\select.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\build\generated\mysql\select.pb.h;D:\WebServer\proto\build\generated\mysql\select.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C++ code for D:/WebServer/proto/source/mysql/select.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/mysql/select.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\source\mysql\select.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\build\generated\mysql\select.pb.h;D:\WebServer\proto\build\generated\mysql\select.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\8d5fef5b894cbd5cf51b00f8cbdab2eb\User.pb.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating C++ code for D:/WebServer/proto/source/user/User.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/user/User.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\source\user\User.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\build\generated\user\User.pb.h;D:\WebServer\proto\build\generated\user\User.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating C++ code for D:/WebServer/proto/source/user/User.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/user/User.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\source\user\User.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\build\generated\user\User.pb.h;D:\WebServer\proto\build\generated\user\User.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating C++ code for D:/WebServer/proto/source/user/User.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/user/User.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\source\user\User.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\build\generated\user\User.pb.h;D:\WebServer\proto\build\generated\user\User.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating C++ code for D:/WebServer/proto/source/user/User.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe -ID:/WebServer/proto/source --cpp_out=D:/WebServer/proto/build/generated D:/WebServer/proto/source/user/User.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\source\user\User.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\build\generated\user\User.pb.h;D:\WebServer\proto\build\generated\user\User.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/WebServer/proto/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\app\Cmake\bin\cmake.exe -SD:/WebServer/proto/source -BD:/WebServer/proto/build --check-stamp-file D:/WebServer/proto/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeCXXCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeRCCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeSystem.cmake;D:\WebServer\proto\build\CMakeFiles\cmake.verify_globs;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeDependentOption.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckCXXSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckIncludeFileCXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckLibraryExists.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageMessage.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindThreads.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;E:\app\Cmake\share\cmake-4.3\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WebServer\proto\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/WebServer/proto/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\app\Cmake\bin\cmake.exe -SD:/WebServer/proto/source -BD:/WebServer/proto/build --check-stamp-file D:/WebServer/proto/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeCXXCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeRCCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeSystem.cmake;D:\WebServer\proto\build\CMakeFiles\cmake.verify_globs;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeDependentOption.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckCXXSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckIncludeFileCXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckLibraryExists.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageMessage.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindThreads.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;E:\app\Cmake\share\cmake-4.3\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WebServer\proto\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/WebServer/proto/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\app\Cmake\bin\cmake.exe -SD:/WebServer/proto/source -BD:/WebServer/proto/build --check-stamp-file D:/WebServer/proto/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeCXXCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeRCCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeSystem.cmake;D:\WebServer\proto\build\CMakeFiles\cmake.verify_globs;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeDependentOption.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckCXXSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckIncludeFileCXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckLibraryExists.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageMessage.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindThreads.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;E:\app\Cmake\share\cmake-4.3\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\WebServer\proto\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/WebServer/proto/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\app\Cmake\bin\cmake.exe -SD:/WebServer/proto/source -BD:/WebServer/proto/build --check-stamp-file D:/WebServer/proto/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeCXXCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeRCCompiler.cmake;D:\WebServer\proto\build\CMakeFiles\4.3.3\CMakeSystem.cmake;D:\WebServer\proto\build\CMakeFiles\cmake.verify_globs;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeDependentOption.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeFindDependencyMacro.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckCXXSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckIncludeFileCXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\CheckLibraryExists.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindPackageMessage.cmake;E:\app\Cmake\share\cmake-4.3\Modules\FindThreads.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Internal\CheckSourceCompiles.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Linker\MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\Windows.cmake;E:\app\Cmake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;E:\app\Cmake\share\cmake-4.3\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\WebServer\proto\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\WebServer\proto\build\generated\common\Common.pb.cc" />
+    <ClCompile Include="D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc" />
+    <ClCompile Include="D:\WebServer\proto\build\generated\mysql\select.pb.cc" />
+    <ClCompile Include="D:\WebServer\proto\build\generated\user\User.pb.cc" />
+    <ClInclude Include="D:\WebServer\proto\build\generated\common\Common.pb.h" />
+    <ClInclude Include="D:\WebServer\proto\build\generated\mysql\MySQL.pb.h" />
+    <ClInclude Include="D:\WebServer\proto\build\generated\mysql\select.pb.h" />
+    <ClInclude Include="D:\WebServer\proto\build\generated\user\User.pb.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\WebServer\proto\build\ZERO_CHECK.vcxproj">
+      <Project>{F30B51D4-0ACE-3AD9-A58D-1839FFE9A7AC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

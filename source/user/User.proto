@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package user;
+
+message User {
+  uint32 UID         = 1;//用户ID
+  uint32 permissions = 2;//用户权限
+}
