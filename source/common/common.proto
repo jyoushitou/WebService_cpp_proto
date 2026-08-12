@@ -3,22 +3,33 @@ syntax = "proto3";
 package common;
 
 // 通用空消息
-message Empty {}
+message empty {}
 
+//通用头节点
 message header
 {
-  uint32 MSGID  = 1;//消息ID
-  uint64 MSGLen = 2;//消息长度
+  //消息ID
+  uint64 MSGID = 1;
+  //发送服务器ID
+  int32 ServiceID = 2;
+  //微服务目标ID
+  int32 ServiceGoalID = 3;
 }
 
+//错误节点
 message error
 {
-  header head      = 3;//消息头部节点
-  uint32 ServiceID = 4;//错误服务器ID
+  //消息头部节点
+  header head = 1;
+  //错误信息
+  string msg = 2;
 }
 
-message goal
+//一般消息节点
+message logs
 {
-  header head          = 3;//消息头部节点
-  uint32 ServiceGoalID = 4; //微服务目标ID
+  //消息头部节点
+  header head = 1;
+  //消息
+  string msg = 2;
 }

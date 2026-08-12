@@ -4,6 +4,24 @@ package MySQL;
 
 import "common/Common.proto";
 
-message MySQL {
+//初始化MySQL连接
+message mysql_init {
+  //通用头节点
+  common.header head = 1;
+  //服务器ip地址
+  string ip = 2;
+  //服务器端口
+  uint32 port = 3;
+  //服务器用户名
+  string user = 4;
+  //用户密码
+  string password = 5;
+  //要连接的数据库
+  string db = 6;
+}
+
+//mysql插入
+message mysql_insert {
+  //消息头节点
   common.header head=1;
 }
