@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package sql;
+
+import "Common.proto";
+
+//定义MySQL通讯节点
+message sql_node {
+  //通讯头
+  common.header head=1;
+  //通讯类型
+  int32 type=2;
+  //通讯具体
+  string msg=3;
+}
+
+//初始化/更新MySQL连接
+message sql_init {
+  //服务器ip地址
+  string ip = 1;
+  //服务器端口
+  uint32 port = 2;
+  //服务器用户名
+  string user = 3;
+  //用户密码
+  string password = 4;
+  //要连接的数据库
+  string db = 5;
+  //初始化连接
+  uint32 InitSize=6;
+  //最大连接量
+  uint32 MaxSize=7;
+  //最大时间
+  uint32 TimeMax=8;
+  //断连时间
+  uint32 TimeOut=9;
+  //线程池数量
+  uint32 ThreadPoolSize=10;
+}
+
+//mysql插入
+message sql_insert {
+  //消息头节点
+  common.header head=1;
+}

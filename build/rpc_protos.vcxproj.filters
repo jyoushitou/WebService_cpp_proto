@@ -1,47 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\WebServer\proto\build\generated\common\Common.pb.cc">
+    <ClCompile Include="D:\WebServer\proto\build\generated\Cert.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\WebServer\proto\build\generated\mysql\MySQL.pb.cc">
+    <ClCompile Include="D:\WebServer\proto\build\generated\Common.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\WebServer\proto\build\generated\mysql\select.pb.cc">
+    <ClCompile Include="D:\WebServer\proto\build\generated\MySQL.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\WebServer\proto\build\generated\user\User.pb.cc">
+    <ClCompile Include="D:\WebServer\proto\build\generated\User.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\WebServer\proto\build\generated\common\Common.pb.h">
+    <ClInclude Include="D:\WebServer\proto\build\generated\Cert.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\WebServer\proto\build\generated\mysql\MySQL.pb.h">
+    <ClInclude Include="D:\WebServer\proto\build\generated\Common.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\WebServer\proto\build\generated\mysql\select.pb.h">
+    <ClInclude Include="D:\WebServer\proto\build\generated\MySQL.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\WebServer\proto\build\generated\user\User.pb.h">
+    <ClInclude Include="D:\WebServer\proto\build\generated\User.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\9dbc6b16bea737698ee75e9e893bd41f\Common.pb.h.rule">
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\e885e984e0d899740d43c6962d06fcec\Cert.pb.h.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\44d64101f07635677f02abbc8f03aa92\MySQL.pb.h.rule">
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\e885e984e0d899740d43c6962d06fcec\Common.pb.h.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\44d64101f07635677f02abbc8f03aa92\select.pb.h.rule">
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\e885e984e0d899740d43c6962d06fcec\MySQL.pb.h.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\8d5fef5b894cbd5cf51b00f8cbdab2eb\User.pb.h.rule">
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\e885e984e0d899740d43c6962d06fcec\User.pb.h.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="D:\WebServer\proto\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\WebServer\proto\source\Cert.proto" />
+    <None Include="D:\WebServer\proto\source\Common.proto" />
+    <None Include="D:\WebServer\proto\source\MySQL.proto" />
+    <None Include="D:\WebServer\proto\source\User.proto" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">

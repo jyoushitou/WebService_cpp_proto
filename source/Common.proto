@@ -14,6 +14,8 @@ message header
   int32 ServiceID = 2;
   //微服务目标ID
   int32 ServiceGoalID = 3;
+  //加密密钥
+  string token=4;
 }
 
 //错误节点
@@ -25,7 +27,7 @@ message error
   string msg = 2;
 }
 
-//一般消息节点
+//日志消息节点
 message logs
 {
   //消息头部节点
