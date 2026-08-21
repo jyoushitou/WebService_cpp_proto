@@ -1,8 +1,14 @@
 syntax = "proto3";
 
-package user;
+package webuser;
 
-message User {
-  uint32 UID         = 1;//用户ID
-  uint32 permissions = 2;//用户权限
+import "Common.proto";
+
+message WebUser {
+  common.header head        = 1;//通用头节点
+  uint32        UID         = 2;//用户ID
+  string        name        = 3;//用户名
+  string        password    = 4;//密码
+  string        email       = 5;//邮箱
+  uint32        permissions = 6;//用户权限
 }
