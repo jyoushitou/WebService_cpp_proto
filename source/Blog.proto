@@ -1,0 +1,31 @@
+//博客
+
+syntax = "proto3";
+
+package Blog;
+
+import "Common.proto";
+
+//命令路由
+message router {
+  common.header head = 1;//传来的头文件
+  int32         type = 2;//路由类型
+}
+
+//获取所有的文章数
+message get_articles{
+  common.header head     = 1;//头节点
+  string        slug     = 2;//路径
+  int32         count    = 3;//总计的文章数
+  string        articles = 4;//存储的所有文章头
+}
+
+//文章的头部信息
+message article_head {
+
+}
+
+//文章的全部数据
+message article_content{
+  article_head head = 1;//头部数据
+}
