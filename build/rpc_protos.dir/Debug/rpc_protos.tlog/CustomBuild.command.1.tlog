@@ -1,3 +1,13 @@
+^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\E885E984E0D899740D43C6962D06FCEC\BLOG.PB.H.RULE
+setlocal
+C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe --cpp_out :D:/WebServer/proto/build/generated -I D:/WebServer/proto/source D:/WebServer/proto/source/Blog.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
 ^D:\WEBSERVER\PROTO\BUILD\CMAKEFILES\E885E984E0D899740D43C6962D06FCEC\CERT.PB.H.RULE
 setlocal
 C:\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe --cpp_out :D:/WebServer/proto/build/generated -I D:/WebServer/proto/source D:/WebServer/proto/source/Cert.proto

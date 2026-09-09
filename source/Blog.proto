@@ -9,7 +9,7 @@ import "Common.proto";
 //命令路由
 message router {
   common.header head = 1;//传来的头文件
-  int32         type = 2;//路由类型
+  string        body = 2;//传来的数据
 }
 
 //获取所有的文章数

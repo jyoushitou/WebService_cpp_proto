@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="D:\WebServer\proto\build\generated\Blog.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\WebServer\proto\build\generated\Cert.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -15,6 +18,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="D:\WebServer\proto\build\generated\Blog.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="D:\WebServer\proto\build\generated\Cert.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -29,6 +35,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\e885e984e0d899740d43c6962d06fcec\Blog.pb.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="D:\WebServer\proto\build\CMakeFiles\e885e984e0d899740d43c6962d06fcec\Cert.pb.h.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
@@ -42,12 +51,6 @@
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="D:\WebServer\proto\source\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="D:\WebServer\proto\source\Cert.proto" />
-    <None Include="D:\WebServer\proto\source\Common.proto" />
-    <None Include="D:\WebServer\proto\source\MySQL.proto" />
-    <None Include="D:\WebServer\proto\source\User.proto" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">

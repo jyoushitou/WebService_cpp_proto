@@ -28,7 +28,10 @@ endforeach()
 set(PROTO_GEN_DIR "${CMAKE_CURRENT_BINARY_DIR}/generated")
 
 # ==================== 创建静态库目标 ====================
-add_library(rpc_protos STATIC ${PROTO_FILES})
+# 注意：不要在这里列出 .proto 文件。
+# protobuf_generate(TARGET ...) 会自动生成 .pb.cc/.pb.h
+# 并把生成的 .cc 加入 target 编译。
+add_library(rpc_protos STATIC)
 
 # 自动调用 protoc 生成 .pb.h/.pb.cc，并附加到目标
 protobuf_generate(

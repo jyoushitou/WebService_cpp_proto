@@ -8,30 +8,24 @@ message empty {}
 //通用头节点
 message header
 {
-  //消息ID
-  uint64 MSGID = 1;
-  //发送服务器ID
-  int32 ServiceID = 2;
-  //微服务目标ID
-  int32 ServiceGoalID = 3;
-  //加密密钥
-  string token=4;
+
+  uint64 MSGID         = 1;  //消息ID
+  int32  ServiceID     = 2;  //发送服务器ID
+  int32  ServiceGoalID = 3;  //微服务目标ID
+  int32  command       = 4;  //命令ID
+  string token         = 5;  //加密密钥
 }
 
 //错误节点
 message error
 {
-  //消息头部节点
-  header head = 1;
-  //错误信息
-  string msg = 2;
+  header head = 1;  //消息头部节点
+  string msg  = 2;  //错误信息
 }
 
 //日志消息节点
 message logs
 {
-  //消息头部节点
-  header head = 1;
-  //消息
-  string msg = 2;
+  header head = 1;  //消息头部节点
+  string msg  = 2;  //消息
 }
