@@ -15,9 +15,8 @@ message router {
 //获取所有的文章数
 message get_articles{
   common.header head     = 1;//头节点
-  string        slug     = 2;//路径
-  int32         count    = 3;//总计的文章数
-  string        articles = 4;//存储的所有文章头
+  int32         count    = 2;//总计的文章数
+  string        articles = 3;//存储的所有文章头
 }
 
 //文章的头部信息
